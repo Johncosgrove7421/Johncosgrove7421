@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+/* Applied across all web pages */
+
+.logo{
+    height: 5em;
+    width: 5em;
+    top: 0;
+    position: absolute;
+    padding: 1.25em 0;
+}
+
+h1{
+    padding-left: 4em;
+}
+
+.head{
+    padding-left: 7.5em;
+    padding-top: 1.25em;
+}
+
+.nav{
+    margin-top: 3em;
+    border: 1px solid #ff4d4d;
+    height: 1.25em;
+    padding: 1.25em;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 6.25em;
+}
+
+li a {
+    text-decoration: none;
+    background-color: #404040;
+    color: white;
+    border-radius: 12.5em;
+    font-size: 1.25em;
+    padding: 0.625em 0;
+}
+
+.nav li a:hover{
+    background-color: #ff4d4d;
+}
+
+body {
+    background-color: #e6e6e6;
+    padding-left: 2.5%;
+    margin: 1.5625%;
+    width: 100%;
+}
+
+p {
+    letter-spacing: 0.1em;
+}
+
+.red-line{
+    border: solid #ff4d4d;
+    border-width: 0.03125em;
+}
+
+/* Home page*/
+
+.latest-article {
+    border: 1px solid #000000;
+    text-align: left;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    width: 60%;
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 10em;
+}
+
+.latest-posts{
+    border: 1px solid #000000;
+    text-align: left;
+    padding-left: 0.625em;
+    padding-right: 1.25em;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 15.25em;
+    right: 7.5%;
+}
+
+.post-time{
+    text-align: right;
+}
+
+.twitter{
+    border: 1px solid #000000;
+    text-align: left;
+    padding-left: 0.625em;
+    padding-right: 1.25em;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    bottom: 8em;
+    right: 7.5%;
+}
+
+.shop{
+    max-width: 70%;
+    height: auto;
+    padding-top: 20%;
+    padding-left: 10%;
+}
+
+/* About us */
+
+.testimony {
+    text-align: left;
+    padding-left: 20%;
+}
+
+.aboutus-shop-image{
+    float: left;
+    height: auto;
+    width: 100%;
+    max-width: 18.75em;
+    padding-right: 1.25em;
+    
+}
+
+/* Service catalog */
+
+.tire-installation p {
+    text-align: left;
+    padding-right: 15.625em;
+}
+
+.tire-installation img {
+    float: right;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding-right: 5em;
+    margin-top: -130px;
+}
+
+.tire-balance p {
+    text-align: left;
+    padding-right: 20.625em;
+}
+
+.tire-balance img {
+    float: right;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding-right: 5em;
+    margin-top: -120px;
+}
+
+.wheel-alignment h2,
+.wheel-alignment p {
+    text-align: left;
+    padding-left: 12.75em;
+    padding-right: 20.625em;
+    margin-bottom: -3em;
+}
+
+.wheel-alignment img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact us page */
+
+.contact {
+    padding-bottom: 15.625em;
+
+}
+
+.contact img {
+    float: left;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding-right: 1.25em;
+}
+
+label {
+    display: inline;
+    font-weight: bold;
+    
+}
+
+form{
+    position: relative;
+    margin-right: 20em;
+    margin-left: 30em;
+    margin-top: -28.5em;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+
+}
+
+
+
+
+/* Product page */
+
+.car-tires p {
+    text-align: left;
+    padding-right: 15.625em;
+}
+
+.car-tires img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    padding-right: 5em;
+    margin-top: -130px;
+}
+
+.truck-tires p {
+    text-align: left;
+    padding-right: 15.625em;
+}
+
+.truck-tires img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    padding-right: 5em;
+    margin-top: -120px;
+}
+
+.motorcycle-tires h2,
+.motorcycle-tires p {
+    text-align: left;
+    padding-left: 22.75em;
+    padding-right: 15.625em;
+    margin-bottom: -6em;
+}
+
+.motorcycle-tires img {
+    max-width: 100%;
+    height: auto;
+}

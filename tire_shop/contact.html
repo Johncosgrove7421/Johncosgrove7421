@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Johnny's Tires Contact Us Page -->
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Johnny's Tires - Contact Us</title>
+        <meta name="description"
+            content="Get in touch with Johnny's Tires. Find our contact information including location, phone number, email, and social media.">
+        <meta name="author" content="Johnny's Tires">
+        <link rel="stylesheet" href="style/stylesheet.css">
+    </head>
+    <body>
+        <!-- Header section -->
+        <header>
+            <h1>Contact Us</h1>
+            <img class="logo" src="images/logo-2.png"
+                alt="Johnny's Tires Logo with a tire and wrench icon">
+            <!-- Navigation with ARIA role -->
+            <nav aria-label="Main Navigation">
+                <ul class="nav">
+                    <li><a href="index.html"
+                            aria-label="Go to Home page">Home</a></li>
+                    <li><a href="aboutus.html"
+                            aria-label="Go to About Us page">About Us</a></li>
+                    <li><a href="service.html"
+                            aria-label="Go to Service Catalog page">Service
+                            Catalog</a></li>
+                    <li><a href="contact.html" aria-current="page"
+                            aria-label="Go to Contact Us page">Contact
+                            Us</a></li>
+                    <li><a href="products.html"
+                            aria-label="Go to Products page">Products</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contact Information Section -->
+        <main>
+            <section aria-labelledby="contact-information">
+                <h2 id="contact-information">Contact Information</h2>
+                <p><strong>Location:</strong>123 street Winston-Salem, NC</p>
+                <p><strong>Phone Number:</strong> 123-456-6789</p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:johnnytires@domain.com">johnnytires@domain.com</a></p>
+                <p><strong>Twitter (X):</strong> <a
+                        href="https://twitter.com/johnnytiress" target="_blank"
+                        aria-label="Follow us on Twitter">@johnnytiress</a></p>
+                <img id="contact-us" src="images/shop-contact.png"
+                    alt="Johnny's Tires shop image">
+            </section>
+
+            <!-- Form Validation Script -->
+            <script>
+                function validateForm() {
+                    let x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                      alert("First name must be filled out.");
+                      return false;
+                    }
+                }
+            </script>
+
+            <!-- Contact Form -->
+            <form class="form" name="myForm" action="#"
+                onsubmit="return validateForm()" method="GET"
+                aria-labelledby="contact-form">
+                <h2 id="contact-form">Contact Us Form</h2>
+
+                <div class="first-name">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="fname"
+                        maxlength="20" aria-required="true" required>
+                </div>
+                <br>
+                <div class="last-name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" maxlength="20" required>
+                </div>
+                <br>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                        placeholder="johnnytires@domain.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        aria-required="true" required>
+                </div>
+                <br>
+                <div class="date">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" aria-required="true" required>
+                </div>
+                <br>
+                <div class="time">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" aria-required="true" required>
+                </div>
+                <br>
+                <div class="telephone">
+                    <label for="telephone">Telephone:</label>
+                    <input type="tel" id="telephone"
+                        pattern="(\d{3})[-.\s]?(\d{3})[-.\s]?(\d{4})"
+                        placeholder="xxx-xxx-xxxx" maxlength="12">
+                </div>
+                <br>
+                <div class="status">
+                    <p><strong>Under Warranty:</strong></p>
+                    <input type="radio" id="yes" name="running" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="running" value="No">
+                    <label for="no">No</label>
+                </div>
+                <br>
+                <div class="status-2">
+                    <p><strong>Current State:</strong></p>
+                    <input type="checkbox" id="running" name="choice1"
+                        value="Running">
+                    <label for="running">Running</label>
+                    <input type="checkbox" id="driveable" name="choice2"
+                        value="Drivable">
+                    <label for="driveable">Drivable</label>
+                </div>
+                <br>
+                <div class="additional-information">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="10" cols="50"
+                        aria-required="true"
+                        placeholder="Additional car information..."></textarea>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Submit"
+                        aria-label="button to submit contact information to Johnny's Tires">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <nav aria-label="Footer Navigation">
+                <ul class="nav">
+                    <li><a href="index.html"
+                            aria-label="Go to Home page">Home</a></li>
+                    <li><a href="aboutus.html"
+                            aria-label="Go to About Us page">About Us</a></li>
+                    <li><a href="service.html"
+                            aria-label="Go to Service Catalog page">Service
+                            Catalog</a></li>
+                    <li><a href="contact.html"
+                            aria-label="Go to Contact Us page"
+                            aria-current="page">Contact Us</a></li>
+                    <li><a href="products.html"
+                            aria-label="Go to Products page">Products</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
