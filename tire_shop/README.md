@@ -16,7 +16,7 @@ I tested my website using automated tools like WAVE and manually by simulating a
 
 The one thing that surprised me about this is how the smallest of design elements (such as insufficient contrast or a floating form label) can make all the difference in accessibility. Though they are small and seemingly insignificant in terms of visual design, these issues can have severe negative impacts on the experience for people using assistive technologies. From now on, I will perform some accessibility testing as early as possible in the development process to detect these issues before they become real blockers.
 
-![web accessibility evaluation](web_accessibility_evaluation.png)
+![web accessibility evaluation](images/web_accessibility_evaluation.png)
 
 ## Conclusion
 
