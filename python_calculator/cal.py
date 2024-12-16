@@ -5,31 +5,31 @@ calculation = ""
 def add_to_calculation(symbol):
     global calculation
     calculation += str(symbol)
-    text_result.delete(1.0, "end")
-    text_result.insert(1.0, calculation)
+    text_result.delete(1, "end")
+    text_result.insert(1, calculation)
 
 def evaluate_calculation():
     global calculation
     try:
         calculation = str(eval(calculation))
-        text_result.delete(1.0, "end")
-        text_result.insert(1.0, calculation)
+        text_result.delete(1, "end")
+        text_result.insert(1, calculation)
     except:
         clear_field()
-        text_result.insert(1.0, "Error")
+        text_result.insert(1, "Error")
     pass
 
 def clear_field():
     global calculation
     calculation = ""
-    text_result.delete(1.0, "end")
+    text_result.delete(0, "end")
     pass
 
 root = tk.Tk()
-root.geometry("475x300")
+root.geometry("475x275")
 root.title("Simple Calculator")
-text_result = tk.Text(root, height=2, width=24, font=("Arial", 24))
-text_result.grid(columnspan=5)
+text_result = tk.Entry(master=root, borderwidth=10, background="white", font=("Arial", 24))
+text_result.grid(row=0, columnspan=6, padx=35)
 
 
 # Row 1
@@ -87,8 +87,8 @@ btn_div.grid(row=4, column=4, sticky=tk.NSEW)
 btn_0 = tk.Button(root, text="0", command=lambda: add_to_calculation(0), width=5, font=("Arial", 14))
 btn_0.grid(row=5, column=1, sticky=tk.NSEW)
 
-btn_sum = tk.Button(root, text="=", command=evaluate_calculation, width=23, font=("Arial", 14))
-btn_sum.grid(row=5, column=2, columnspan=4, sticky=tk.NSEW)
+btn_sum = tk.Button(root, text="=", command=evaluate_calculation, width=15, font=("Arial", 14))
+btn_sum.grid(row=5, column=2, columnspan=3, sticky=tk.NSEW)
 
 
 # MacBook Errors
