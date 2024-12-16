@@ -5,18 +5,18 @@ calculation = ""
 def add_to_calculation(symbol):
     global calculation
     calculation += str(symbol)
-    text_result.delete(1, "end")
-    text_result.insert(1, calculation)
+    text_result.delete(0, "end")
+    text_result.insert(0, calculation)
 
 def evaluate_calculation():
     global calculation
     try:
         calculation = str(eval(calculation))
-        text_result.delete(1, "end")
-        text_result.insert(1, calculation)
+        text_result.delete(0, "end")
+        text_result.insert(0, calculation)
     except:
         clear_field()
-        text_result.insert(1, "Error")
+        text_result.insert(0, "Error")
     pass
 
 def clear_field():
