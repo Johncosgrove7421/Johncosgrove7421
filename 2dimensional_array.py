@@ -9,11 +9,11 @@ from numpy.ma.extras import column_stack
 
 table = prettytable.PrettyTable()
 
-table.field_names = ['North', 'South', 'East', 'West']
-table.add_row(['Bob', 'Sue', 'Nathan', 'Wanda'])
-table.add_row(['Stef', 'Janice', 'Henry', 'Charles'])
-table.add_row(['Ron', 'Will', 'Kimmy', 'Pete'])
-
+table.add_column('North',['Bob', 'Stef', 'Ron'])
+table.add_column('South', ['Sue', 'Janice', 'Will'])
+table.add_column('East',['Nathan', 'Henry', 'Kimmy'])
+table.add_column('West',['Wonda', 'Charles', 'Pete'])
+print('Section 1: Two-dimensional NumPy Array')
 print(table)
 
 ###########################################################
@@ -21,35 +21,27 @@ print(table)
 
 ###########################################################
 
-salesTeam = np.array(['Bob', 'Stef', 'Ron'])
+salesTeam = ['Bob', 'Stef', 'Ron']
 
-# South = (table.get_string(fields=['South']))
-
-result = np.isin('Stef', salesTeam)
-
-print('Section 2: NumPy Array')
+print('\nSection 2: NumPy Array')
 print(f'There are {np.array(len(salesTeam))} in the NumPy array')
 
+result = np.isin('Stef', salesTeam)
 if result == True:
     print('Stef is in the salesTeam NumPy array')
 else:
     print('Stef is not in the salesTeam NumPy array')
 
-# Left of on  section 2 #6
+south_index = table.field_names.index('South')
+south_col = [row[south_index] for row in table.rows]
+combined = south_col + salesTeam
+print(f'There are {len(combined)} in the NumPy array')
 
+combined.remove('Janice')
+combined.remove('Ron')
+print(f"There are {len(combined)} in the NumPy array")
 
-# print(f'There are {(len(table.field_names))} names in the NumPy array')
+print("Names currently in the SalesTeam NumPy array")
+for item in combined:
+    print(item)
 
-
-#      f'There are {} in the NumPy array\n'
-#      f'Names currently in the salesTeam NumPy array'
-
-# Expected Output
-
-# There are 6 names in the Numpy array
-# There are 4 names in the Numpy array
-# Names currently in the salesTeam NumPy array
-# Bob
-# Stef
-# Sue
-# Will
