@@ -1,0 +1,9 @@
+      Fruit  Price
+1   bananas   0.59
+2    grapes   2.99
+3    apples   1.49
+4     pears   1.39
+5   lettuce   0.99
+6    onions   0.79
+7  potatoes   0.58
+8   peaches   1.59
