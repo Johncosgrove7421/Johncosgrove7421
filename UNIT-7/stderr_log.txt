@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/Users/johncosgrove/Desktop/Projects/UNIT-7/IN254_Cosgrove_Unit7.py", line 31, in <module>
+    displayLogfile(logs=log_file)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/johncosgrove/Desktop/Projects/UNIT-7/IN254_Cosgrove_Unit7.py", line 27, in displayLogfile
+    with read(logs, 'r') as file:
+         ^^^^
+NameError: name 'read' is not defined
+Traceback (most recent call last):
+  File "/Users/johncosgrove/Desktop/Projects/UNIT-7/IN254_Cosgrove_Unit7.py", line 31, in <module>
+    displayLogfile(logs=log_file)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/johncosgrove/Desktop/Projects/UNIT-7/IN254_Cosgrove_Unit7.py", line 27, in displayLogfile
+    with read(logs, 'r') as file:
+         ^^^^
+NameError: name 'read' is not defined
+Traceback (most recent call last):
+  File "/Users/johncosgrove/Desktop/Projects/UNIT-7/IN254_Cosgrove_Unit7.py", line 67, in <module>
+    divideByZero()
+    ~~~~~~~~~~~~^^
+TypeError: divideByZero() missing 1 required positional argument: 'number'
