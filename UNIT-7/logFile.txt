@@ -1,0 +1,4 @@
+ERROR:root:Attempted to divide by zero.
+ERROR:root:Could not find file NoFileNamedThis.txt
+ERROR:root:Index was outside the bounds of the array
+ERROR:root:Object reference not set to an instance of an object

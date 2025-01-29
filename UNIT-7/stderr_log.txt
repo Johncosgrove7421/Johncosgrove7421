@@ -19,3 +19,12 @@ Traceback (most recent call last):
     divideByZero()
     ~~~~~~~~~~~~^^
 TypeError: divideByZero() missing 1 required positional argument: 'number'
+Traceback (most recent call last):
+  File "/Users/johncosgrove/Desktop/Projects/UNIT-7/IN254_Cosgrove_Unit7.py", line 67, in <module>
+    divideByZero()
+    ~~~~~~~~~~~~^^
+TypeError: divideByZero() missing 1 required positional argument: 'number'
+ERROR:root:Attempted to divide by zero.
+ERROR:root:Could not find file NoFileNamedThis.txt
+ERROR:root:Index was outside the bounds of the array.
+ERROR:root:Object reference not set to an instance of an object.
